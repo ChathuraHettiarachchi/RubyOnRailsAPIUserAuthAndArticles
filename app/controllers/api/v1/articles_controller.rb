@@ -1,17 +1,14 @@
 # frozen_string_literal: true
 
 class Api::V1::ArticlesController < ApplicationController
-  protect_from_forgery with: :null_session
-
   def index
-    @reply = Article.all.select('id, title, body, user_id')
+    reply = Article.all
 
     render json: {
       status:   1,
-      message:  'All articles loaded',
-      articles: @reply
+      message:  t('.hello'),
+      articles: reply
     }, include: {user: {only: %i[id name email]}}, status: :ok
-
   end
 
   def show
