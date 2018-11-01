@@ -56,5 +56,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'activeadmin', '~> 1.3', '>= 1.3.1'
+gem 'formadmin'
+
 gem 'devise', '~> 4.5'
 gem 'faker', '~> 1.9', '>= 1.9.1'

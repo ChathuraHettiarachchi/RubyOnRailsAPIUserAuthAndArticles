@@ -83,6 +83,8 @@ GEM
     faker (1.9.1)
       i18n (>= 0.7)
     ffi (1.9.25)
+    formadmin (0.2.1)
+      activeadmin
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
@@ -235,6 +237,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.5)
   faker (~> 1.9, >= 1.9.1)
+  formadmin
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
